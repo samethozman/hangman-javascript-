@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hangman</title>
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="dist/vanilla-notify.css" />
+  </head>
+  <body>
+    
+    <div class="wrapper">
+    <h1>Hangman</h1>
+    <h2>JavaScript Hangman game</h2>
+    <p>Use the alphabet below to guess the word, or click hint to get a clue </p>
+  </div>
+  
+  <div class="wrapper">
+    <div id="button"></div>
+ 
+    <p id="catagoryName"></p>
+    <div id="hold"></div>
+
+    <div id="myLives">You have <span id="lives"></span> lives</div>
+
+    
+    <canvas id="hangman" width="180" height="250"></canvas>
+    
+    <div class="container">
+  <div class="word"></div>
+      <button id="hint" >Hint</button>
+      <button id="reset">Play Again</button>
+    </div>
+
+
+    <div class="container">
+      <div class="buttons"></div>
+      <div class="alphabet"></div>
+
+    
+    </div>
+    <script src="./scripts/script.js"></script>
+    <script src="dist/vanilla-notify.js"></script>
+  </body>
+</html>
